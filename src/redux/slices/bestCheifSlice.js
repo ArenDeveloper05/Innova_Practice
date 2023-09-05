@@ -4,7 +4,6 @@ import chef2 from '../../images/chef-Slider/chef-2.jpg'
 import chef3 from '../../images/chef-Slider/chef-3.jpg'
 import chef4 from '../../images/chef-Slider/chef-4.jpg'
 
-
 const initialState = {
   bestCheif: [
     {
