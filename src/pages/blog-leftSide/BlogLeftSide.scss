@@ -1,0 +1,177 @@
+.blogLeft-main {
+  font-family: 'PT Sans Narrow', sans-serif;
+  display: flex;
+  padding: 80px;
+  &-form {
+    &-inputs {
+      > input {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 15px;
+        color: #999999;
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('../../assets/Icons/search.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+      }
+      padding-bottom: 35px;
+    }
+  }
+  &-div {
+    &-pagination{
+    
+      >ul{
+        padding-left: 100px;
+        padding-top: 50px;
+        >li{
+          padding: 5px;
+          border: 1px solid;
+          width: 35px;
+          >a{
+            color: #999999;
+          }  
+        }
+        
+        display: flex;
+        margin: 0;
+        list-style: none;
+      }
+    }
+    &-tags{
+      width: 150px;
+      height: 100px;
+      padding-top: 15px;
+      font-size: 15px;
+  color: #121619;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #dedede;
+  line-height: 1.2;
+  >ul{
+    padding-top: 15px;
+    margin: 0px -3px;
+    >li{
+      border: solid 1px black;
+    }
+    >li:hover{
+      background-color: #fd9d3e;
+    }
+    >ul,li{
+      padding: 5px 3px;
+    }
+  }
+    }
+    &-dataTwo {
+      &-hidden{
+        >img{
+          width: 110px;
+          height: 80px;
+        }
+       overflow: hidden
+      }
+      &-hidden:hover{
+        transform: scale(1.1)
+      }
+      display: flex;
+      padding-top: 15px;
+      > nav {
+        > h2 {
+          font-size: 10px;
+          padding: 5px;
+          color: #1d1d1d;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          // line-height: 20px;
+          overflow: hidden;
+          display: block;
+        }
+        > p {
+          padding: 5px;
+          font-size: 15px;
+          color: #fd9d3e;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          padding-bottom: 4px;
+          display: block;
+        }
+      }
+      > img {
+        width: 100px;
+        height: 80px;
+      }
+      >img:hover{
+        width: 150px;
+      }
+    }
+    &-data {
+      padding-top: 20px;
+      padding-left: 105px;
+      &-images {
+        max-width: 100%;
+      }
+      &-images:hover {
+        width: 950px;
+      }
+      // By John Doe 0 comment
+      &-mesOrder {
+        font-size: 16px;
+        color: #1d1d1d;
+        padding: 15px 10px;
+      }
+      &-title {
+        font-size: 30px;
+        padding-top: 15px;
+      }
+      &-mes {
+        padding-top: 15px;
+        font-size: 16px;
+        color: #999999;
+      }
+      &-a {
+        padding-top: 55px;
+        color: #fd9d3e;
+      }
+    }
+  }
+}
+
+.categories {
+  > h3 {
+    padding-top: 15px;
+    font-size: 21px;
+  }
+  > ul,
+  li {
+    > a {
+      color: #999999;
+    }
+    padding-bottom: 8px;
+    margin: 0;
+    list-style: none;
+    border-bottom: 1px solid #dedede;
+    font-size: 14px;
+    color: #999999;
+    border-top: 1px solid #dedede;
+    display: block;
+    padding: 14px 0px;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+}
+.categorie-head {
+  font-size: 24px;
+  color: #121619;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #dedede;
+  line-height: 1.2;
+}
