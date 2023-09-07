@@ -10,6 +10,7 @@
 :root {
   --example: red;
   --bs-orange: #fd9d3e;
+  --bs-greenyellow: #91b842;
   --narrow-font-family: 'PT Sans Narrow', sans-serif;
   --max-width: 1200px;
 }
