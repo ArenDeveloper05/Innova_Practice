@@ -1,14 +1,14 @@
-// import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { BestChefData } from './BestChefData'
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
-// import { Autoplay, Pagination, Navigation} from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import './BestChefSlider.scss'
 import 'swiper/css'
+import { useSelector } from 'react-redux';
 
 const BestChefSlider = () => {
+  const bestCheif = useSelector((state) => {
+    return state.bestCheif.bestCheif;
+  });
   return (
     <div className='BestChefSlider'>
       <section className='BestChefSlider-Section'>
@@ -16,13 +16,6 @@ const BestChefSlider = () => {
         <p className='BestChefSlider-textTwo'>Our Best Chef</p>
         <div>
           <Swiper
-          // modules={[Navigation,Pagination,Autoplay]}
-          //   loop={true}
-          //   slidesPerView={4}
-          //   autoplay={{delay: 2000}}
-          //   navigation
-          //   freeMode= {true}
-          //   pagination
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           // spaceBetween={500}
           slidesPerView={4}
@@ -31,7 +24,7 @@ const BestChefSlider = () => {
           autoplay={{ delay: 2000 }}
           loop={true}
           >
-            {BestChefData.map(({ id, title, name, photo }) => (
+            {bestCheif.map(({ id, title, name, photo }) => (
               <SwiperSlide key={id}>
                 <div id={id} className='BestChefSlider-Section-Chefs'>
                   <img alt={title} src={photo} />

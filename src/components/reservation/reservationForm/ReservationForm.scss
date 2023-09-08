@@ -1,0 +1,31 @@
+.reservation {
+  width: 100%;
+  padding: 120px 0;
+  background-image: url(../../../assets//images//ReservationImages//table-book.jpg);
+  &-inner {
+    border: solid;
+    margin: auto;
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+      > p {
+        font-size: 30px;
+        color: #fd9d3e;
+        font-family: "Pacifico", cursive;
+        padding-bottom: 10px;
+      }
+      > h2 {
+        font-size: 70px;
+        line-height: 58px;
+        letter-spacing: 2px;
+        font-family: "PT Sans Narrow", sans-serif;
+      }
+    }
+  }
+}
