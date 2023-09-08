@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import headerLogo from "../../assets/Icons/header-logo.png"
 //icons
@@ -17,13 +17,16 @@ import "./Header.scss"
 const Header = () => {
     const headerRef = useRef()
 
-    document.addEventListener("scroll", (event) => {
-        if (window.scrollY > 0) { 
-            headerRef.current.className = "headerScrolled"
-        } else {
-            headerRef.current.className = "headerNthScrolled"
-        }
-    } )
+    useEffect(() => {
+        document.addEventListener("scroll", (event) => {
+            if (window.scrollY > 0) { 
+                document.querySelector("header").className = "headerScrolled"
+            } else if (window.scrollY <= 0 && headerRef) {
+                document.querySelector("header").className = "headerNthScrolled"
+            }
+        } )
+    }, [])
+    
   return (
     <header ref={headerRef}>
         <div className="header-section">
