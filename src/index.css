@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Pacifico&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -12,5 +12,6 @@
   --bs-orange: #fd9d3e;
   --bs-greenyellow: #91b842;
   --narrow-font-family: 'PT Sans Narrow', sans-serif;
+  --pacifico-font-family: 'Pacifico', "cursive";
   --max-width: 1200px;
 }

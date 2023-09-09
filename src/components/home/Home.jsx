@@ -4,6 +4,7 @@ import LatestNews from "./latestNews/LatestNews";
 import BestChefSlider from "./bestChefSlider/BestChefSlider";
 import SliderAnimations from "./sliderAnimations/SliderAnimations";
 import Speciality from "./speciality/Speciality";
+import CustomerReviews from "../customerReviews/CustomerReviews";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <OurSpecialMenu />
       <BestChefSlider />
       <LatestNews />
+      <CustomerReviews />
     </>
   );
 };
