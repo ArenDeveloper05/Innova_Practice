@@ -92,11 +92,11 @@ const Header = () => {
                         </div>
                     </div>
                 </Link></li>
-                <li className='blog'><Link to="/blog">
+                <li className='blog'><Link to="/leftSide">
                     BLOG
                     <div className="blog-modal" style={{display: "none"}}>
                         <ul>
-                            <li> <div className="list-square"></div> <Link>Blog Leftside</Link></li>
+                            <li> <div className="list-square"></div> <Link to="/leftSide"> Blog Leftside</Link></li>
                             <li> <div className="list-square"></div> <Link>Blog Rightside</Link> </li>
                             <li> <div className="list-square"></div> <Link>Blog Detail</Link></li>
                         </ul>
