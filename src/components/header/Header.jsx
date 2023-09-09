@@ -19,10 +19,11 @@ const Header = () => {
 
     useEffect(() => {
         document.addEventListener("scroll", (event) => {
-            if (window.scrollY > 0) { 
-                document.querySelector("header").className = "headerScrolled"
-            } else if (window.scrollY <= 0 && headerRef) {
-                document.querySelector("header").className = "headerNthScrolled"
+            const header = document.querySelector("header");
+            if (window.scrollY > 0 && header) { 
+                header.className = "headerScrolled"
+            } else if (window.scrollY <= 0 && header) {
+                header.className = "headerNthScrolled"
             }
         } )
     }, [])
