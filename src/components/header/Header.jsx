@@ -110,7 +110,7 @@ const Header = () => {
                             <li> <div className="list-square"></div> <Link to="/about">About Us</Link></li>
                             <li> <div className="list-square"></div> <Link to="">Contact</Link></li>
                             <li> <div className="list-square"></div> <Link to="">Shop Grid</Link></li>
-                            <li> <div className="list-square"></div> <Link to="">404</Link></li>
+                            <li> <div className="list-square"></div> <Link to="*">404</Link></li>
                         </ul>
                     </div>
                 </Link></li>

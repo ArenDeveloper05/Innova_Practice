@@ -66,6 +66,10 @@ header  {
                 padding: 0 10px;
                 margin-left: 20px;
             }
+            button:hover {
+                background-color: var(--bs-orange);
+                color: #fff;
+            }
             .blog, .pages, .menu {
                 height: 80px;
             }
