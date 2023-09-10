@@ -3,8 +3,13 @@
 
 .special-menu-section {
     background-color: black;
+    position: relative;
     img {
         width: 100%;
+    }
+    .bottom {
+        position: absolute !important;
+        bottom: -50px !important;
     }
 }
 .special-menu {
@@ -12,7 +17,6 @@
     background-color: black;
     min-height: 500px;
     margin: auto;
-
     &-inner {
         display: flex;
         flex-direction: column;

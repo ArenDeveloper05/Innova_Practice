@@ -15,3 +15,7 @@
   --pacifico-font-family: 'Pacifico', "cursive";
   --max-width: 1200px;
 }
+
+input:focus {
+  outline: none;
+}

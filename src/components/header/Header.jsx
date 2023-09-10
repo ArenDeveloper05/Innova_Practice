@@ -103,11 +103,11 @@ const Header = () => {
                     </div>
                 </Link></li>
                 <li><Link to="/reservation">RESERVATION</Link></li>
-                <li className="pages"><Link to="/pages">
+                <li className="pages"><Link to="/about">
                     PAGES
                     <div className="pages-modal" style={{display: "none"}}>
                         <ul>
-                            <li> <div className="list-square"></div> <Link to="">About Us</Link></li>
+                            <li> <div className="list-square"></div> <Link to="/about">About Us</Link></li>
                             <li> <div className="list-square"></div> <Link to="">Contact</Link></li>
                             <li> <div className="list-square"></div> <Link to="">Shop Grid</Link></li>
                             <li> <div className="list-square"></div> <Link to="">404</Link></li>
