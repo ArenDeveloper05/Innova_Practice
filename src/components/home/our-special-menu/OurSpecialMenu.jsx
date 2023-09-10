@@ -19,7 +19,7 @@ const OurSpecialMenu = () => {
                     <MenuAssortmant />
                 </div>
             </section>
-            <img src={bottom} alt="bottom" />
+            <img src={bottom} alt="bottom" className="bottom" />
         </div>
     )
 }

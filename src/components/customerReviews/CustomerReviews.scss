@@ -4,8 +4,13 @@
     display: flex;
     justify-content: center;
     height: 830px;
+    position: relative;
     .top, .bottom {
-        width: 98vmax;
+        width: 99vmax;
+    }
+    .bottom {
+        position: absolute;
+        bottom: -10px;
     }
     .customer-reviews {
         max-width: var(--max-width);
@@ -63,7 +68,7 @@
                     width: 100%;
                     justify-content: center;
                     flex-direction: column;
-                    padding: 10px;
+                    padding: 20px;
                     background-color: #fff;
                     position: relative;
                     .arrow-left {
