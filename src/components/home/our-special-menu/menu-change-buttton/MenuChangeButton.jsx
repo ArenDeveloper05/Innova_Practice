@@ -15,11 +15,17 @@ const MenuChangeButton = () => {
     }
 
     return (
-        <div className="menu-inner-info-button">
+        <div className="special-menu-inner-info-button">
             {
                 buttonsState && buttonsState.map(({ id, title, type }) => {
-                    return <div key={id} className="menu-inner-info-button-item" onClick={() => {
-                        assortmants(type)
+                    return <div key={id} className="special-menu-inner-info-button-item" onClick={(e) => {
+                        console.log(e.target);
+                        e.target.parentNode.childNodes.forEach(child => {
+                            child.style.backgroundColor = "#3d3d3d"
+                        });
+                        e.target.style.backgroundColor = "var(--bs-orange)";
+                        e.target.style.borderRadius = "50px"
+                        assortmants(type);
                     }}>{title}</div>
                 })
             }

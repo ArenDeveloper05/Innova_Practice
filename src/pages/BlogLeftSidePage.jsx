@@ -1,15 +1,15 @@
 import { useState } from "react";
-import Home from "../components/home/Home";
+import BlogLeftSide from "../components/blog-leftSide/BlogLeftSide";
 import Loading from "../components/loading/Loading";
 import Layout from "../layout/Layout";
 import {setLoading} from "../setLoadingFunction"
 
-const HomePage = () => {
+const BlogLeftSidePage = () => {
   const [isLoading, setIsLoading] = useState(true)
     setLoading(setIsLoading);
   return (
-    isLoading ? <Loading /> : (<Layout> <Home /> </Layout>)
+    isLoading ? <Loading /> : (<Layout> <BlogLeftSide /> </Layout>)
     );
 };
 
-export default HomePage;
+export default BlogLeftSidePage;

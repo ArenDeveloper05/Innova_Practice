@@ -1,15 +1,15 @@
 import { useState } from "react";
-import Home from "../components/home/Home";
 import Loading from "../components/loading/Loading";
 import Layout from "../layout/Layout";
 import {setLoading} from "../setLoadingFunction"
+import AboutUs from "../components/aboutUs/AboutUs";
 
-const HomePage = () => {
-  const [isLoading, setIsLoading] = useState(true)
+const AboutUsPage = () => {
+    const [isLoading, setIsLoading] = useState(true)
     setLoading(setIsLoading);
   return (
-    isLoading ? <Loading /> : (<Layout> <Home /> </Layout>)
+    isLoading ? <Loading /> : (<Layout> <AboutUs /> </Layout>)
     );
-};
+}
 
-export default HomePage;
+export default AboutUsPage
