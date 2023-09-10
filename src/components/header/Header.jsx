@@ -108,7 +108,7 @@ const Header = () => {
                     <div className="pages-modal" style={{display: "none"}}>
                         <ul>
                             <li> <div className="list-square"></div> <Link to="/about">About Us</Link></li>
-                            <li> <div className="list-square"></div> <Link to="">Contact</Link></li>
+                            <li> <div className="list-square"></div> <Link to="/contact">Contact</Link></li>
                             <li> <div className="list-square"></div> <Link to="">Shop Grid</Link></li>
                             <li> <div className="list-square"></div> <Link to="">404</Link></li>
                         </ul>
