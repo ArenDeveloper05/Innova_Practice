@@ -109,7 +109,7 @@ const Header = () => {
                         <ul>
                             <li> <div className="list-square"></div> <Link to="/about">About Us</Link></li>
                             <li> <div className="list-square"></div> <Link to="">Contact</Link></li>
-                            <li> <div className="list-square"></div> <Link to="">Shop Grid</Link></li>
+                            <li> <div className="list-square"></div> <Link to="/orderOnline">Shop Grid</Link></li>
                             <li> <div className="list-square"></div> <Link to="">404</Link></li>
                         </ul>
                     </div>
@@ -117,7 +117,9 @@ const Header = () => {
                 <li><BsTelephone /> <span>+91 123 456 789</span></li>
                 <li><SlHandbag /><span>0 items-$0.00</span></li>
             </ul>
-            <button>ORDER ONLINE</button>
+            <Link to="/orderOnline" style={{textDecoration: "none"}}>
+                <button>ORDER ONLINE</button>
+            </Link>
         </nav>
         </div>
     </header>

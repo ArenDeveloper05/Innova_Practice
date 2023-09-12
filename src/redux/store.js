@@ -8,6 +8,7 @@ import latestNewsReducer from "./slices/latestNewsSlice";
 import bestCheifReducer from "./slices/bestCheifSlice";
 import leftSideReducer from './slices/blogLeftSide';
 import customerReviewsReducer from './slices/customerReviewsSlice'
+import orderOnlineReducer from "./slices/orderOnlineSlice";
 
 const store = configureStore({
   reducer: {
@@ -17,7 +18,8 @@ const store = configureStore({
     latestNews: latestNewsReducer,
     bestCheif: bestCheifReducer,
     leftSide: leftSideReducer,
-    customerReviews: customerReviewsReducer
+    customerReviews: customerReviewsReducer,
+    orderOnline: orderOnlineReducer
   },
 });
 
