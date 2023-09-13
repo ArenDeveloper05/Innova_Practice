@@ -171,7 +171,7 @@ const menuSlice = createSlice({
                 return state
             }
             state.menu = initialState.menu.filter((item) => item[payload.type])
-
+            return state
         }
     }
 });

@@ -84,10 +84,10 @@ const Header = () => {
                         </div>
                         <div className="menu-modal-info">
                             <ul>
-                                <li> <div className="list-square"></div> <Link to="">Menu list</Link></li>
+                                <li> <div className="list-square"></div> <Link to="/menu2">Menu list</Link></li>
                                 <li> <div className="list-square"></div> <Link to="">Menu grid</Link></li>
-                                <li> <div className="list-square"></div> <Link to="">Special Pizza</Link></li>
-                                <li> <div className="list-square"></div> <Link to="">All pizza</Link></li>
+                                <li> <div className="list-square"></div> <Link to="/menu2">Special Pizza</Link></li>
+                                <li> <div className="list-square"></div> <Link to="/menu2">All pizza</Link></li>
                             </ul>
                         </div>
                     </div>
