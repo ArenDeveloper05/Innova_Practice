@@ -19,7 +19,12 @@ const initialState = {
             title: "MARGERHITA PIZZA",
             info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
             price: "$20.50",
-            type: "pizza",
+            drinks: false,
+            salads: false,
+            pastas: false,
+            burgers: true,
+            deserts: false,
+            pizzas: true
         },
         {
             id: 2,
@@ -27,7 +32,12 @@ const initialState = {
             title: "RUM WITH SODA",
             info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
             price: "$20.50",
-            type: "drinks",
+            drinks: true,
+            salads: false,
+            pastas: false,
+            burgers: true,
+            deserts: true,
+            pizzas: true,
         },
         {
             id: 3,
@@ -35,7 +45,12 @@ const initialState = {
             title: "CEASER SALAD",
             info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
             price: "$20.50",
-            type: "salads",
+            drinks: false,
+            salads: true,
+            pastas: false,
+            burgers: true,
+            deserts: false,
+            pizzas: false,
         },
         {
             id: 4,
@@ -43,7 +58,12 @@ const initialState = {
             title: "SEA FOOD PASTA",
             info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
             price: "$20.50",
-            type: "pastas",
+            drinks: false,
+            salads: false,
+            pastas: true,
+            burgers: true,
+            deserts: false,
+            pizzas: false,
         },
         {
             id: 5,
@@ -51,7 +71,12 @@ const initialState = {
             title: "CHOCOLATE COOKIES",
             info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
             price: "$20.50",
-            type: "deserts"
+            drinks: false,
+            salads: false,
+            pastas: false,
+            burgers: true,
+            deserts: true,
+            pizzas: false,
         },
         {
             id: 6,
@@ -59,7 +84,12 @@ const initialState = {
             title: "PEPPERONI PIZZA",
             info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
             price: "$20.50",
-            type: "pizzas",
+            drinks: false,
+            salads: false,
+            pastas: false,
+            burgers: false,
+            deserts: false,
+            pizzas: true,
         },
         {
             id: 7,
@@ -67,7 +97,12 @@ const initialState = {
             title: "BISMARK PIZZA",
             info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
             price: "$20.50",
-            type: "pizzas",
+            drinks: false,
+            salads: false,
+            pastas: false,
+            burgers: false,
+            deserts: false,
+            pizzas: false,
         },
         {
             id: 8,
@@ -75,7 +110,12 @@ const initialState = {
             title: "VALDOSTANA PIZZA",
             info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
             price: "$20.50",
-            type: "pizzas",
+            drinks: false,
+            salads: false,
+            pastas: false,
+            burgers: false,
+            deserts: false,
+            pizzas: true,
         },
     ],
     buttons: [
@@ -124,9 +164,14 @@ const menuSlice = createSlice({
     initialState,
     reducers: {
         filteredState: (state, { payload }) => {
-            console.log(payload.type);
-            state.menu = state.menu.filter((item) => item.type === payload.type)
-
+            console.log(payload.type, state.menu);
+            if (payload.type === "all") {
+                console.log(initialState);
+                state.menu = initialState.menu
+                return state
+            }
+            state.menu = initialState.menu.filter((item) => item[payload.type])
+            return state
         }
     }
 });
