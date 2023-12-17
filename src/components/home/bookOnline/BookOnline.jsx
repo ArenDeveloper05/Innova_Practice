@@ -1,35 +1,32 @@
-import React from 'react'
-//icons
-import {BsPhoneVibrate} from "react-icons/bs"
-//styles
-import "./BookOnline.scss"
+
+import { useRef } from "react";
+import "./BookOnline.scss";
+import {SlScreenSmartphone} from 'react-icons/sl'
+
+
 const BookOnline = () => {
   return (
-    <section className='bookOnline-section'>
-        <div className="bookOnline">
-            <div className="bookOnline-title">
-                <h2>Fresh From Pizzon</h2>
-                <h1>BOOK ONLINE</h1>
-                <span>Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit. Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur</span>
-                <div className="bookOnline-title-phone">
-                    <BsPhoneVibrate />
-                    <span>+ 91 123 456 789 0 </span>
-                </div>
-            </div>
-            <form className="bookOnline-form">
-                <h4>BOOK A TABLE</h4>
-                <input type="text" placeholder='Name'/>
-                <input type="text" placeholder='Email'/>
-                <select id='persons'>
-                    <option value="Person5">Person5</option>
-                    <option value="Person4">Person4</option>
-                    <option value="Person3">Person3</option>
-                </select>
-                <input type="text" placeholder='Date'/>
-                <button>Book Now</button>
-            </form>
+    
+    <div className="BookOnline">
+        <div className="BookOnline-info">
+            <h3>Fresh From Pizzon</h3>
+            <h1>BOOK ONLINE </h1>
+            <p>Sit amet, consectetur adipiscing elit quisque eget maximus velit
+               non eleifend.libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit.
+               Sit amet, consectetur adipiscing elit quisque eget maximus velit,
+               non eleifend libero curabitur
+            </p>
+            <button><SlScreenSmartphone/>+91 123 456 789 0</button>
         </div>
-    </section>
+        <div className="BookOnline-bookNow">
+            <p>BOOK A TABLE</p>
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="person"/>
+            <input type="text"placeholder="Date"/>
+            <button>BOOK NOW</button>
+        </div>
+    </div>
   )
 }
 
