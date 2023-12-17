@@ -9,17 +9,19 @@ const BasicBanner = (props) => {
       }}
     >
       <div className="basicbanner">
-        <div className="basicbanner-center">
-          <h1 className="basicbanner-center-title"> {props.title} </h1>
-          <ul className="basicbanner-center-pages">
+        
+      </div>
+      <div className="center">
+      <div className="center-basicbanner">
+          <h1 className="center-basicbanner-title"> {props.title} </h1>
+          <ul className="center-basicbanner-pages">
             <li>
               <a href="/">Home</a>
             </li>
             <span>/</span>
             <li>{props.pageName}</li>
           </ul>
-        </div>
-      </div>
+        </div></div>
     </section>
   );
 };
