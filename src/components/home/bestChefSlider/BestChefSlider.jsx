@@ -17,7 +17,7 @@ const BestChefSlider = () => {
         <div>
           <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          // spaceBetween={500}
+          spaceBetween={10}
           slidesPerView={4}
           navigation
           speed = {1000}
