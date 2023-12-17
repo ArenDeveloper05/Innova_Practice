@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { ROUTER } from "./router";
 import HomePage from "../pages/HomePage";
+import LeftSidePage from "../pages/LeftSidePage";
 import MenuPage from "../pages/MenuPage";
 import ReservationPage from "../pages/ReservationPage";
 import BlogLeftSidePage from "../pages/BlogLeftSidePage";
@@ -19,7 +20,7 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route path={HOME_PAGE_ROUTE} element={<HomePage />} />
-      <Route path={LEFTSIDE_PAGE_ROUTE} element={<BlogLeftSidePage />} />
+      <Route path={LEFTSIDE_PAGE_ROUTE} element={<LeftSidePage/>}/>
       <Route path={MENU_PAGE_ROUTE} element={<MenuPage />} />
       <Route path={RESERVATION_PAGE_ROUTE} element={<ReservationPage />} />
       <Route path={ABOUTUS_PAGE_ROUTE} element={<AboutUsPage />} />
