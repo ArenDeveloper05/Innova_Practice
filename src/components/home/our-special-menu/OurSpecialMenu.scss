@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Itim&family=Karla&family=Pacifico&family=Poppins:wght@200&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Itim&family=Karla&family=PT+Sans+Narrow:wght@400;700&family=Pacifico&family=Poppins:wght@200&family=Shadows+Into+Light&display=swap");
+
+.special-menu-section {
+    background-color: black;
+    position: relative;
+    img {
+        width: 100%;
+    }
+    .bottom {
+        position: absolute !important;
+        bottom: -50px !important;
+    }
+}
+.special-menu {
+    max-width: var(--max-width);
+    background-color: black;
+    min-height: 500px;
+    margin: auto;
+    &-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0;
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+
+            >p {
+                // padding-bottom: 12px;
+                color: #fd9d3e;
+                font-family: "Pacifico", cursive;
+                font-size: 32px;
+
+            }
+
+            >h1 {
+                color: white;
+                font-size: 70px;
+            }
+
+            &-button {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 690px;
+                min-height: 40px;
+                border-radius: 50px;
+                background-color: #3d3d3d;
+                cursor: pointer;
+                // >a {
+                //     width: 500px;
+                //     display: flex;
+                //     justify-content: space-between;
+                //     // align-items: center;
+                //     text-decoration: none;
+                //     color: white;
+
+                //     >.change {
+                //         display: flex;
+                //         justify-content: center;
+                //         align-items: center;
+                //         cursor: pointer;
+                //         width: 100%;
+                //         height: 40px;
+                //     }
+
+                //     >.change:hover {
+                //         background-color: #fd9d3e;
+                //         border-radius: 50px;
+                //     }
+                // }
+                &-item {
+                    padding: 20px;
+                    // width: 500px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 50px;
+                    &:hover {
+                        background-color: #fd9d3e !important;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+
+        &-assortmant {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+
+            &-item {
+                padding: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: "PT Sans Narrow", sans-serif;
+                font-size: 16px;
+                // font-weight: 400;
+                max-width: 300px;
+                // height: 350px;
+
+                >a {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 24px;
+                    text-decoration: none;
+
+
+                    >img {
+                        width: 240px;
+                        border-radius: 50%;
+                        margin-bottom: 25px;
+                        transition-duration: 0.5s;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    >h3 {
+                        // margin-top: 24px;
+                        color: white;
+                    }
+
+                    >p {
+                        margin-top: 24px;
+                        color: #999999;
+                    }
+
+                    >.price {
+                        color: #fd9d3e;
+                    }
+                }
+
+            }
+        }
+    }
+}

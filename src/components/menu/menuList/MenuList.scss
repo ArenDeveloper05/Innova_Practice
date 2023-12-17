@@ -1,0 +1,109 @@
+.menulist{
+    max-width: var(--max-width);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    &-sort{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-center{
+            width: 700px;
+            height: 60px;
+            background-color: #999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 40px;
+            list-style: none;
+            >li{
+                font-family: 'PT Sans Narrow', sans-serif;
+                font-size: 16px;
+                font-weight: 700;
+                list-style: none;
+                padding: 30px;
+            }
+           
+
+            .active{
+                background-color: #fd9d3e;
+                border-radius: 50px;
+                width: 100px;
+                height: 60px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               color: white;
+               
+
+               
+              
+            }
+            
+               
+    
+            
+        }
+    }
+    .menulist-sort-result{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        &-item{
+            width: 380px;
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+
+            &:hover{
+               .img{
+                 padding-top: 0px;
+               } 
+                   
+            }
+        
+            .img{
+                height: 300px;
+                padding-top: 20px;
+                transition: padding 500ms;
+
+                >img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .description{
+                padding: 20px;
+                font-family: 'PT Sans Narrow', sans-serif;
+                font-size: 16px;
+                color: #999;
+                font-weight: 400;
+                line-height: 20px;
+                
+                >h1{
+                    color: black;
+                    margin-bottom: 20px;
+                }
+                >p{
+                    margin-bottom: 15px;
+                }
+               
+            }
+            .order{
+                font-size: 16px;
+                color: #fd9d3e;
+                font-weight: 700;
+                cursor: pointer;
+                &:hover{
+                    color: black;
+                }
+            }
+            
+        }
+    }
+}

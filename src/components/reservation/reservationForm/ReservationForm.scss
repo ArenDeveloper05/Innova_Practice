@@ -1,0 +1,206 @@
+.reservation {
+  width: 100%;
+  padding: 120px 0;
+  background-image: url(../../../assets//images//ReservationImages//table-book.jpg);
+  &-inner {
+    margin: auto;
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &-item {
+        border: solid 1px #999999;
+        height: 50px;
+        width: 584px;
+        margin-bottom: 28px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        padding-right: 25px;
+        position: relative;
+        input {
+          height: 100%;
+          flex: 1;
+          border: none;
+          outline: none;
+          padding-left: 25px;
+        }
+        input::placeholder {
+          color: #999999;
+          font-size: 14px;
+          font-family: "PT Sans Narrow", sans-serif;
+        }
+        svg {
+          color: #999999;
+          font-size: 32px;
+          cursor: pointer;
+        }
+        &-dropdown {
+          position: absolute;
+          width: 100%;
+          top: 48px;
+          z-index: 5;
+          border-top: 1px #999999 solid;
+          display: none;
+          &-item {
+            background-color: white;
+            height: 50px;
+            border-bottom: 1px #999999 solid;
+            border-left: 1px #999999 solid;
+            border-right: 1px #999999 solid;
+            font-size: 14px;
+            font-family: "PT Sans Narrow", sans-serif;
+            padding-left: 25px;
+            color: #999999;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+      .comments {
+        width: 100%;
+      }
+      button {
+        margin: auto;
+        background-color: #fd9d3e;
+        border: solid 1px #fd9d3e;
+        color: white;
+        height: 60px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 11px 170px;
+        font-size: 24px;
+        font-family: "PT Sans Narrow", sans-serif;
+        border-radius: 50px;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: white;
+        border: solid 1px #fd9d3e;
+        color: #fd9d3e;
+      }
+    }
+    &-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 70px;
+      > p {
+        font-size: 30px;
+        color: #fd9d3e;
+        font-family: "Pacifico", cursive;
+        padding-bottom: 10px;
+      }
+      > h2 {
+        font-size: 70px;
+        line-height: 58px;
+        letter-spacing: 2px;
+        font-family: "PT Sans Narrow", sans-serif;
+      }
+    }
+  }
+}
+
+.orange {
+  border: solid 1px #fd9d3e;
+}
+
+.close {
+  animation-fill-mode: forwards;
+  animation-name: close;
+  animation-duration: 0.5s;
+  position: absolute;
+  display: block;
+}
+
+.open {
+  animation-name: open;
+  animation-duration: 0.5s;
+  position: absolute;
+  display: block;
+}
+
+.upFirst {
+  animation-fill-mode: forwards;
+  animation-name: icon-first-up;
+  animation-duration: 0.5s;
+}
+
+.upSecond {
+  animation-fill-mode: forwards;
+  animation-name: icon-second-up;
+  animation-duration: 0.5s;
+}
+
+.downFirst {
+  animation-name: icon-first-down;
+  animation-duration: 0.5s;
+}
+
+.downSecond {
+  animation-name: icon-second-down;
+  animation-duration: 0.5s;
+}
+
+@keyframes icon-first-up {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: -180deg;
+  }
+}
+
+@keyframes icon-first-down {
+  0% {
+    rotate: -180deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+@keyframes icon-second-up {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: -180deg;
+  }
+}
+
+@keyframes icon-second-down {
+  0% {
+    rotate: -180deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+@keyframes close {
+  0% {
+    opacity: 1;
+    top: 48px;
+  }
+  100% {
+    opacity: 0;
+    top: 25px;
+  }
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+    top: 25px;
+  }
+  100% {
+    opacity: 1;
+    top: 48px;
+  }
+}

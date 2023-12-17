@@ -1,13 +1,16 @@
 .BestChefSlider {
+    display: flex;
     background-color: black;
     justify-content: center;
     text-align: center;
-  border: solid;
+    border: solid;
+    position: relative;
+    background-image: url(../../../images/sliderBackgroundImage.png);
   &-textOne {
     font-size: 25px;
     color: #fd9d3e;
-  font-family: 'Pacifico', cursive;
-  padding-bottom: 10px;
+    font-family: 'Pacifico', cursive;
+    padding-bottom: 10px;
   
 }
 &-textTwo{
@@ -20,7 +23,8 @@
   &-Section {
     >div{
         display: flex;
-        // padding: 5px;
+        max-width: 1400px;
+        padding: 5px;
         >img{
             padding: 15px;
         }
@@ -28,6 +32,10 @@
   }
 }
 .BestChefSlider-Section-Chefs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 22px;
   &-Name{
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -39,14 +47,31 @@
   text-align: center;
   justify-content: center;
   padding: 15px;
+  img {
+    width: 90%;
+  }
   >div{
-    padding-left: 31px;
   >nav{
-    // font-size: 20px;
-    width: 278px;
+    width: 90%;
     height: 80px;
     border: solid rgb(255, 255, 255);
     background-color: white;
   }
 }
+}
+
+.swiper-button-prev,.swiper-button-next {
+    color: rgba(253, 157, 62, 0.5) !important;
+    width: 70px;
+    font-weight: 1000 !important;  
+}
+
+.swiper-button-prev {
+  // position: absolute;
+  // left: -20px !important;
+  // float: left;
+}
+
+  .swiper-button-prev:hover,.swiper-button-next:hover {
+    color: var(--bs-orange) !important;
 }
